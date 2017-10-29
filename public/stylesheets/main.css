@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 3em;
+  left: 0vw; /*  should be ten */
+  color: white;
+  background-color: rgb(28, 26, 26);
+}
+.navlinks > * {
+  margin: 0 0.5em;
+}
+
+.about{
+  background: url(https://images.pexels.com/photos/240225/pexels-photo-240225.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb) no-repeat 0px center fixed;
+  height: 70vw;
+  color: white;
+  text-align: center;
+}
+
+.about-text{
+  padding-top: 10em;
+  font-size: 1.5em;
+  text-shadow: 2px 2px #b06a09;
+}
+
