@@ -3,6 +3,13 @@ body {
   font-size: 16px;
 }
 
+#first > img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -13,15 +20,18 @@ body {
   color: white;
   background-color: rgb(28, 26, 26);
 }
+
+
 .navlinks > * {
   margin: 0 0.5em;
 }
 
 .about{
-  background: url(https://images.pexels.com/photos/240225/pexels-photo-240225.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb) no-repeat 0px center fixed;
+  /* background: url(https://images.pexels.com/photos/240225/pexels-photo-240225.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb) no-repeat 0px center fixed; */
   height: 70vw;
   color: white;
   text-align: center;
+  position: relative
 }
 
 .about-text{
@@ -30,3 +40,59 @@ body {
   text-shadow: 2px 2px #b06a09;
 }
 
+.info-pane {
+  position: relative;
+  left: 10vw;
+  text-align: center;
+  width: 80vw;
+  color: white;
+  background-color: rgb(28, 26, 26);
+  padding-bottom: 1em;
+}
+
+.info-pane > div,h2 {
+  margin: 0em;
+  padding: 1em;
+}
+
+hr {
+  width: 24vw;
+}
+
+.item-pane {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 20em;
+}
+.item a {
+  text-decoration: none;
+  color: white;
+}
+
+.item > img {
+  height: 15em;
+  width: 15em;
+  border-radius: 5%;
+}
+
+.thoughts > i {
+  font-size: 1.5em;
+  padding-top: 0.75em;
+}
+
+.thoughts > h2 {
+  padding-bottom: 2em;
+}
+
+.thoughts > h6 {
+  font-size: 1em;
+  margin-top: 0.4em;
+}

@@ -13,6 +13,5 @@ const components = {
   Thoughts,
   Nav};
 
-console.log(components);
 
 export default components;

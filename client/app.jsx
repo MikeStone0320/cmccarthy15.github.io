@@ -10,8 +10,7 @@ import { Provider } from 'react-redux';
 ///import About from './components/About.jsx';
 //import Nav from './components/Nav.jsx';
 import components from './components/index.jsx';
-console.log(components);
-const { About, Nav } = components;
+const { About, Blog, Crafts, Nav, Projects, Thoughts } = components;
 
 // const About = () => (
 //   <div>
@@ -21,14 +20,19 @@ const { About, Nav } = components;
 
 ReactDOM.render(
   <Provider store={store} >
-    <div>
-      <Nav />
-      <Router>
+    <Router>
+      <div id="first">
+        <Nav />
         <Switch>
-          <Route path="/" component={About} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/crafts" component={Crafts} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/FoodFor" component={Thoughts} />
+          <Route path="/about" component={About} />
         </Switch>
-      </Router>
-    </div>
+        <img src="https://images.pexels.com/photos/240225/pexels-photo-240225.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="background lights" />
+        </div>
+    </Router>
   </Provider>,
   document.getElementById('app') // make sure this is the same as the id of the div in your index.html
 );

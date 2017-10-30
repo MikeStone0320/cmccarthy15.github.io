@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Nav = () => (
-  <Router>
-    <div className="navbar">
+  <header className="navbar">
       <div className="navname">
         <h1>Caryn</h1>
         <h4>Developer, Educator, Crafter</h4>
@@ -13,12 +12,11 @@ const Nav = () => (
         <Link to="/projects">Projects</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/crafts">Crafts</Link>
-        <Link to="/thoughtfood">Food for Thought</Link>
+        <Link to="/FoodFor">Food for Thought</Link>
         <Link to="/resume">Resume</Link>
         <i>mail</i>
       </div>
-    </div>
-  </Router>
+  </header>
 );
 
 export default Nav;
