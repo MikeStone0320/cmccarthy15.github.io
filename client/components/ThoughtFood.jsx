@@ -7,6 +7,8 @@ const Thoughts = () => (
     <h6>from <i>Change</i> by J. Cole</h6>
     <i>Your future is created by what you do today, not tomorrow.</i>
     <h6>Robert Kiyosaki</h6>
+    <i>Of all the things that can boost emotions, motivation, and perceptions during a workday, the single most important is making progress in meaningful work.</i>
+    <h6>Teresa Amabile</h6>
   </div>
 );
 
